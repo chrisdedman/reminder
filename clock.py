@@ -38,7 +38,7 @@ def first_time_crate():
         # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True). # <<= This is the repertory Apple Song by default.
+                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True). # <<= This is the repertory Apple Song per default.
             sound.play()
         # ----------------------------------------------------------------------------------------- #
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
