@@ -38,7 +38,7 @@ def first_time_crate():
         # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Users/chrisrollet/Documents/Python Project/Clock Timer/Puppy Out1.m4a', True)
+                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True). # <<= This is the repertory Apple Song by default.
             sound.play()
         # ----------------------------------------------------------------------------------------- #
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
@@ -80,7 +80,7 @@ def second_time_crate():
         # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Users/chrisrollet/Documents/Python Project/Clock Timer/Puppy Out1.m4a', True)
+                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
@@ -122,7 +122,7 @@ def third_time_crate():
         # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Users/chrisrollet/Documents/Python Project/Clock Timer/Puppy Out1.m4a', True)
+                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
@@ -164,7 +164,7 @@ def forth_time_crate():
         # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Users/chrisrollet/Documents/Python Project/Clock Timer/Puppy Out1.m4a', True)
+                '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
