@@ -44,8 +44,7 @@ def first_time_crate():
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
             time.sleep(10)
-            while sound.isPlaying():
-                second_time_crate()
+            second_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
         # --------------------------------------------- #
@@ -86,8 +85,7 @@ def second_time_crate():
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
             time.sleep(10)
-            while sound.isPlaying():
-                third_time_crate()
+            third_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
         # --------------------------------------------- #
@@ -128,8 +126,7 @@ def third_time_crate():
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
             time.sleep(10)
-            while sound.isPlaying():
-                forth_time_crate()
+            forth_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
         # --------------------------------------------- #
@@ -170,8 +167,7 @@ def forth_time_crate():
         # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
             time.sleep(10)
-            while sound.isPlaying():
-                exit()
+            exit()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
         # --------------------------------------------- #
