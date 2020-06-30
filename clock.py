@@ -41,9 +41,9 @@ def first_time_crate():
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True). # <<= This is the repertory Apple Song per default.
             sound.play()
         # ----------------------------------------------------------------------------------------- #
-        # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
-            time.sleep(10)
+            time.sleep(20)
             second_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
@@ -82,9 +82,9 @@ def second_time_crate():
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
-        # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
-            time.sleep(10)
+            time.sleep(20)
             third_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
@@ -123,9 +123,9 @@ def third_time_crate():
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
-        # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
-            time.sleep(10)
+            time.sleep(20)
             forth_time_crate()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
@@ -164,9 +164,9 @@ def forth_time_crate():
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
         # ----------------------------------------------------------------------------------------- #
-        # ------ Add 10 seconds time sleep (time the song play) before to close the program ------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
         # ----------------------------------------------------------------------------------------- #
-            time.sleep(10)
+            time.sleep(20)
             exit()
         # --------------------------------------------- #
         # ------ Print this until the time out! ------- #
