@@ -40,9 +40,9 @@ def first_time_crate():
             sound.initWithContentsOfFile_byReference_(
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True). # <<= This is the repertory Apple Song per default.
             sound.play()
-        # ----------------------------------------------------------------------------------------- #
-        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
-        # ----------------------------------------------------------------------------------------- #
+        # --------------------------------------------------------------------------------------------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to jump to the next part ------- #
+        # --------------------------------------------------------------------------------------------- #
             time.sleep(20)
             second_time_crate()
         # --------------------------------------------- #
@@ -81,9 +81,9 @@ def second_time_crate():
             sound.initWithContentsOfFile_byReference_(
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
-        # ----------------------------------------------------------------------------------------- #
-        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
-        # ----------------------------------------------------------------------------------------- #
+        # --------------------------------------------------------------------------------------------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to jump to the next part ------- #
+        # --------------------------------------------------------------------------------------------- #
             time.sleep(20)
             third_time_crate()
         # --------------------------------------------- #
@@ -122,9 +122,9 @@ def third_time_crate():
             sound.initWithContentsOfFile_byReference_(
                 '/Library/Audio/Apple Loops/Apple/01 Hip Hop/Afloat Beat.caf', True)
             sound.play()
-        # ----------------------------------------------------------------------------------------- #
-        # ------ Add 20 seconds time sleep (time the song play) before to close the program ------- #
-        # ----------------------------------------------------------------------------------------- #
+        # --------------------------------------------------------------------------------------------- #
+        # ------ Add 20 seconds time sleep (time the song play) before to jump to the next part ------- #
+        # --------------------------------------------------------------------------------------------- #
             time.sleep(20)
             forth_time_crate()
         # --------------------------------------------- #
