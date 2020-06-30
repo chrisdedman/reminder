@@ -1,3 +1,7 @@
+# ---------------------------------------------------------------------------- #
+# --- This code is for automating a reminder for my Puppy's Crate Training --- #
+# ---------------------------------------------------------------------------- #
+
 from sys import exit
 from AppKit import NSSound
 import time
@@ -5,7 +9,7 @@ import time
 # ---------------------------------------------- #
 # --- Variable Nap's Times / 24h Format --- #
 # ---------------------------------------------- #
-end_time1 = "Tue Jun 29 10:00:00 2020"
+end_time1 = "Tue Jun 30 10:00:00 2020"
 end_time2 = "Tue Jun 30 13:00:00 2020"
 end_time3 = "Tue Jun 30 16:00:00 2020"
 end_time4 = "Tue Jun 30 19:00:00 2020"
