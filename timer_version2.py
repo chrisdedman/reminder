@@ -25,7 +25,7 @@ def first_time_crate():
             # ----------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                '/Users/chrisrollet/Desktop/Programming/Python Project/Clock Timer/Puppy Out1.m4a', True)
+                '/Users/chrisrollet/Desktop/Programming/Python Project/Clock Timer/Puppy Out1.m4a', True) # Add your repository where to find your song.
             sound.play()
             # ----------------------------------------------------------------------------------------- #
             # ------ Add 5 seconds time sleep (time the song play) before to close the program ------- #
