@@ -4,7 +4,7 @@ import time
 import os
 
 def first_time_crate():
-    end_time1 = input("At what time do you want an alarm?\n(Format: hh:mm:ss)\n>>")
+    end_time1 = input("At what time do you want an alarm?\n(Format 24h: hh:mm:ss)\n>>")
     reminder = input("What's the reminder for?\n>>")
     its_time = False
     while its_time == False:
@@ -28,7 +28,7 @@ def first_time_crate():
                 '/Users/chrisrollet/Desktop/Programming/Python Project/Clock Timer/Puppy Out1.m4a', True) # Add your own file where to find your song.
             sound.play()
             # ----------------------------------------------------------------------------------------- #
-            # ------ Add 5 seconds time sleep (time the song play) before to close the program ------- #
+            # ------ Add 5 seconds time sleep (time the song play) before to close the program -------- #
             # ----------------------------------------------------------------------------------------- #
             time.sleep(10)
             while sound.isPlaying():
