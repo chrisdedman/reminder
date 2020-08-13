@@ -1,4 +1,4 @@
-This project is automate a reminder for boring staff.
+This project is automate a reminder for boring stuff.
 Like in this case, reminder to when too go for a walk with my dog for exemple.
 
 Timer Version 2 is an update (I get little more knowladge since a started this project) and you're now able to set up 
