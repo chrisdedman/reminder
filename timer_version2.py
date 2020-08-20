@@ -60,9 +60,9 @@ def Alarm():
             sound.initWithContentsOfFile_byReference_(
                 'reminder_voice.mp3', True)        # < ------------------------- Here should be your song.
             sound.play()
-            # ----------------------------------------------------------------------------------------- #
-            # ------ Add 5 seconds time sleep (time the song play) before to close the program ------- #
-            # ----------------------------------------------------------------------------------------- #
+            # ----------------------------------------------------------------------------------------------------- #
+            # ------ Add 8 seconds time sleep (time the song play for me, you can add more or less for you) ------- #
+            # ----------------------------------------------------------------------------------------------------- #
             time.sleep(8)
             while sound.isPlaying():
                 another = input("Do you want an other one?\n[yes/no]\n>>")
