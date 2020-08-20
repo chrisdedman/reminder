@@ -34,8 +34,7 @@ def Alarm():
     # -- Here you append your history to the history file: history_reminder.txt -- #
     # ---------------------------------------------------------------------------- #
     with open("history_reminder.txt", 'a') as output:
-        for row in list:
-            output.write(str(row) + '\n')
+        output.write(all + '\n')
             
     Last_reminder = input("Do you want to see your all reminder schedules?\n[yes/no]\n>>")
     if 'yes' in Last_reminder:
