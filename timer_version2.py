@@ -30,6 +30,13 @@ def Alarm():
     # --------------------------------------------- #
     all = "Time: " + end_time1 + " Your Reminder is: " + reminder
     list.append(all)
+    # ---------------------------------------------------------------------------- #
+    # -- Here you append your history to the history file: history_reminder.txt -- #
+    # ---------------------------------------------------------------------------- #
+    with open("history_reminder.txt", 'a') as output:
+        for row in list:
+            output.write(str(row) + '\n')
+            
     Last_reminder = input("Do you want to see your all reminder schedules?\n[yes/no]\n>>")
     if 'yes' in Last_reminder:
         print(list)
@@ -69,13 +76,10 @@ def Alarm():
                 if another == 'yes':
                     return Alarm()
                 else:
-                    # ----------------------------------------------------------------------------------------------------- #
-                    # -- Here you print the history of your day, and append it to the history file: history_reminder.txt -- #
-                    # ----------------------------------------------------------------------------------------------------- #
+                    # -------------------------------------------- #
+                    # -- Here you print the history of your day -- #
+                    # -------------------------------------------- #
                     print(list)
-                    with open("history_reminder.txt", 'a') as output:
-                        for row in list:
-                            output.write(str(row) + '\n')
                     break
             # --------------------------------------------- #
             # ------ Print this until the time out! ------- #
