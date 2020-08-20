@@ -1,10 +1,15 @@
+
 from sys import exit
 from AppKit import NSSound
 import time
 import os
-
+# ----------------------------------------------------- #
+# -- Create a list where to save your daily reminder -- #
+# ----------------------------------------------------- #
 list = []
-# Here's your daily date append in the file: history_reminder.txt
+# ----------------------------------------------------------------------- #
+# --- Here's your daily date append in the file: history_reminder.txt --- #
+# ----------------------------------------------------------------------- #
 def todaysDate():
     daily_clock = time.localtime()
     daily_date = time.strftime("%a, %b %d %Y", daily_clock)
@@ -13,11 +18,16 @@ def todaysDate():
         output.write("\n" + data + '\n')
         output.close()
         return Alarm()
-
+# ------------------------------- #
+# -- Set up your reminder here -- #
+# ------------------------------- #
 def Alarm():
     global list
     end_time1 = input("At what time do you want an alarm?\n(Format 24h: hh:mm:ss)\n>>")
     reminder = input("What's the reminder for?\n>>")
+    # --------------------------------------------- #
+    # -- Append your reminder in list = [] above -- #
+    # --------------------------------------------- #
     all = "Time: " + end_time1 + " Your Reminder is: " + reminder
     list.append(all)
     Last_reminder = input("Do you want to see your all reminder schedules?\n[yes/no]\n>>")
@@ -59,7 +69,9 @@ def Alarm():
                 if another == 'yes':
                     return Alarm()
                 else:
-                    # Here you print the history of your day, and append it to the history file: history_reminder.txt 
+                    # ----------------------------------------------------------------------------------------------------- #
+                    # -- Here you print the history of your day, and append it to the history file: history_reminder.txt -- #
+                    # ----------------------------------------------------------------------------------------------------- #
                     print(list)
                     with open("history_reminder.txt", 'a') as output:
                         for row in list:
@@ -79,3 +91,4 @@ def Alarm():
 
 if __name__ == "__main__":
     todaysDate()
+
