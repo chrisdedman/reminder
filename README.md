@@ -17,4 +17,4 @@ Download the following files:
 - timer_version2.py
 
 keep those two file in the same repository (don't forgot to add your personnal song in the code timer_version2.py)
-Every time you set up a reminder, the program save (append not erase) your data in the history file, you keep in track what you are doing everyday.
+Every time you set up a reminder, the program save (append not erase) your data in the history file, you keep in track what you are doing every day.
