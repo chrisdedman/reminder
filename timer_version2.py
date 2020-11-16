@@ -1,6 +1,6 @@
 
 from sys import exit
-from AppKit import NSSound
+from AppKit import NSSound # < ---- Delect this if you are under Linux ( Doesn't work for me with Ubuntu 20.4 )
 import time
 import os
 import pyttsx3
