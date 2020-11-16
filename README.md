@@ -16,3 +16,4 @@ Download the following files:
 
 keep those two file in the same repository (don't forgot to add your personnal song in the code timer_version2.py)
 Every time you set up a reminder, the program save (append not erase) your data in the history file, you keep in track what you are doing every day.
+If you try the timer_version2 under Linux Ubuntu 20.4, the AppKit doesn't (*for me), I wrote some instruction in the script pay attention to it.
