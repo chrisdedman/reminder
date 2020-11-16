@@ -84,9 +84,14 @@ def Alarm():
             # ------ Print this until the time out! ------- #
             # --------------------------------------------- #
         else:
+            start = time.strftime("%X")
+            format = '%H:%M:%S'
+            time_left = datetime.strptime(end_time1, format) - datetime.strptime(start, format) # Subtract the time left before end time.
+            
             print("Local current time :", Timer)
             print("\tTimer end at: ", end_time1)
             print("\tYour reminder is:", reminder)
+            print("\tTime left: ", time_left)
             print("." * 50)
             time.sleep(1)
             os.system('clear')
