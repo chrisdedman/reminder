@@ -3,6 +3,8 @@ from sys import exit
 from AppKit import NSSound
 import time
 import os
+import pyttsx3
+from datetime import datetime
 # ----------------------------------------------------- #
 # -- Create a list where to save your daily reminder -- #
 # ----------------------------------------------------- #
@@ -52,26 +54,32 @@ def Alarm():
         # ------ Local Time in your country! ------- #
         # ------------------------------------------ #
         clock = time.localtime()  # get struct_time
-        Timer = time.strftime("%a, %b %d %Y%, %X%p (%Z)", clock)
+        Timer = time.strftime("%a, %b %d %Y, %X%p (%Z)", clock)
         # ------------------------- #
         # ------ Timer Loop ------- #
         # ------------------------- #
         if end_time1 in Timer:
             its_time = True
             print("Your Reminder is:\n(",reminder,")")
+            pyttsx3.speak(reminder)  # < ----------------------------------------- Here the script play your reminder text
             # ----------------------------- #
             # ------ Prepare Sounds ------- #
             # ----------------------------- #
+            
+            # --------------------------------------------- #
+            # I couldn't make this part work with Linux so  #
+            # just delect this part if you are under linux  #
+            # --------------------------------------------- #
             sound = NSSound.alloc()
             sound.initWithContentsOfFile_byReference_(
-                'reminder_voice.mp3', True)        # < ------------------------- Here should be your song.
+                'reminder_voice.mp3', True)        # < ------------------------- Here should be your own song.
             sound.play()
             # ----------------------------------------------------------------------------------------------------- #
             # ------ Add 8 seconds time sleep (time the song play for me, you can add more or less for you) ------- #
             # ----------------------------------------------------------------------------------------------------- #
             time.sleep(8)
-            while sound.isPlaying():
-                another = input("Do you want an other one?\n[yes/no]\n>>")
+            while sound.isPlaying():  # < ------------------------------------- Delect this as well if you are under Linux
+                another = input("Do you want an other one?\n[yes/no]\n>>") # < ----- Reposition this part is you delect the sound player above
                 if another == 'yes':
                     return Alarm()
                 else:
